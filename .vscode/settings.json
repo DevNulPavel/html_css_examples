@@ -1,5 +1,10 @@
 {
-    "liveServer.settings.root": "/test_1/html_pages",
-    // "livePreview.serverRoot": "/Users/devnul/projects/htmx_examples/test_1/html_pages",
+    //////////////////////////////////////////////////////
+    // Live server extention
+    "liveServer.settings.root": "/test_1",
+    //////////////////////////////////////////////////////
+    // Live preview extention
+    "livePreview.serverRoot": "test_1",
+    "livePreview.autoRefreshPreview": "On Changes to Saved Files"
     // "livePreview.openPreviewTarget": "External Browser"
 }
