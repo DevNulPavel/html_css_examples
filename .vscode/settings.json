@@ -1,10 +1,10 @@
 {
     //////////////////////////////////////////////////////
     // Live server extention
-    "liveServer.settings.root": "/test_2",
+    "liveServer.settings.root": "/test_3_float",
     //////////////////////////////////////////////////////
     // Live preview extention
-    "livePreview.serverRoot": "test_2",
+    "livePreview.serverRoot": "test_3_float",
     "livePreview.autoRefreshPreview": "On Changes to Saved Files"
     // "livePreview.openPreviewTarget": "External Browser"
 }
