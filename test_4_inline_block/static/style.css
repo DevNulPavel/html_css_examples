@@ -12,6 +12,7 @@ body{
     margin: 0;
     padding: 0;
     vertical-align: top;
+    _font-size: 0px; /* Исправление зазоров, вариант 1 */
 }
 .icon {
     width: 100px;
@@ -20,10 +21,11 @@ body{
 .string {
     width: 100px;
     height: 40px;
-    margin: 0;
+    margin-top: -5px; /* Исправление зазоров, вариант 2 */
     text-align: center;
 }
 .link {
+    font-size: 16px;
     margin: 0px;
     padding: 0px;
 }
