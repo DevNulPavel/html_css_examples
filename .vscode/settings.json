@@ -1,10 +1,10 @@
 {
     //////////////////////////////////////////////////////
     // Live server extention
-    "liveServer.settings.root": "/test_5_display_table",
+    "liveServer.settings.root": "/test_6_margin_collapse",
     //////////////////////////////////////////////////////
     // Live preview extention
-    "livePreview.serverRoot": "test_5_display_table",
+    "livePreview.serverRoot": "test_6_margin_collapse",
     "livePreview.autoRefreshPreview": "On Changes to Saved Files"
     // "livePreview.openPreviewTarget": "External Browser"
 }
