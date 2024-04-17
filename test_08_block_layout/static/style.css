@@ -1,0 +1,55 @@
+* {
+    /* border: 1px solid; */
+}
+
+body {
+    background-color: aliceblue;
+    max-width: 640px;
+    min-width: 480px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background-color: antiquewhite;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#container {
+    background-color: lightgray;
+    width: 100%;
+    height: auto;
+}
+
+#container>#sidebar {
+    background-color: lightcoral;
+    float: left;
+    width: 20%;
+    height: 200px;
+}
+
+#container>#content {
+    background-color: lightgreen;
+    float: right;
+    width: 80%;
+    height: 400px;
+}
+
+/* Отдельный класс для отоключения float */
+.clear {
+    clear: both;
+}
+
+#footer {
+    _clear: both; /* Так можем отключить float */
+    background-color: lightcyan;
+    height: 40px;
+    width: 100% ;
+    text-align: left;
+    line-height: 40px;
+}
