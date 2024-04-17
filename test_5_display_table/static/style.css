@@ -1,0 +1,28 @@
+* {
+    border: 1px solid;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    display: table;
+    width: 100px;
+    _border-spacing: 10px;
+}
+
+.row {
+    display: table-row;
+    width: 100px;
+    height: 100px;
+}
+
+.cell {
+    display: table-cell;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
