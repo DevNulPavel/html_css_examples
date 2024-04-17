@@ -9,20 +9,20 @@ body {
 
 .table {
     display: table;
-    width: 100px;
+    width: 400px;
+    height: auto;
     _border-spacing: 10px;
 }
 
 .row {
     display: table-row;
-    width: 100px;
-    height: 100px;
+    _width: 400px; /* Расчет автоматический */
 }
 
 .cell {
     display: table-cell;
-    width: 100px;
-    height: 50px;
+    _width: 100px; /* Расчет автоматический */
+    height: 40px;
     text-align: center;
     vertical-align: middle;
 }
