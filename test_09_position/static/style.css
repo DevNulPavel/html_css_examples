@@ -1,0 +1,80 @@
+* {
+    /* Для отладочных целей */
+    _border: 1px solid;
+}
+
+body {
+    background-color: aliceblue;
+    max-width: 640px;
+    min-width: 480px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------------------------------------------------------------ */
+
+#main_div_1 {
+    background-color: beige;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#text_top_1 {
+    background-color: chartreuse;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#h2_header_1 {
+    background-color: bisque;
+    position: relative;
+    top: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+#other_text_1 {
+    background-color: cornsilk;
+    position: relative;
+    left: -10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------------ */
+
+#main_div_2 {
+    background-color: beige;
+    /* Включает позиционирование относительно родителя */
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#text_top_2 {
+    background-color: chartreuse;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#h2_header_2 {
+    background-color: bisque;
+    /* Здесь мы сдвигаем элемент в абсолютных значениях относительно main_div_2 */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+#other_text_2 {
+    background-color: cornsilk;
+    position: relative;
+    left: -10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
