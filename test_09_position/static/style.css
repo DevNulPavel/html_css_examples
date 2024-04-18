@@ -1,5 +1,6 @@
 * {
     /* Для отладочных целей */
+    outline: 1px solid green;
     _border: 1px solid;
 }
 
