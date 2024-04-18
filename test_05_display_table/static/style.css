@@ -24,5 +24,6 @@ body {
     _width: 100px; /* Расчет автоматический */
     height: 40px;
     text-align: center;
+    /* Центрирует содержимое вертикально для ячейки таблицы */
     vertical-align: middle;
 }
