@@ -4,29 +4,143 @@
     _border: 1px solid;
 }
 
-/* Tooltip container */
-.tooltip {
+/* Настройки для контейнера тултипов */
+.tooltip_container {
+    /* Включаем относительное позиционирование чилдов */
     position: relative;
+
+    /* Чтобы контейнер вел себя как инлайновый, а не блочный элемент */
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+
+    /* If you want dots under the hoverable text */
+    _border-bottom: 1px dotted black;
 }
 
-/* Tooltip text */
-.tooltip .tooltiptext {
+/* Настройка дочернего тултипа */
+.tooltip_container>.tooltip_text {
+    /* Настройка фиксированного размера */
+    _width: 120px;
+    _height: 40px;
+    _line-height: 40px;
+
+    /* По-умолчанию не показывается тултип */
     visibility: hidden;
-    width: 120px;
+
+    /* Указываем фоновый цвет и цвет текста */
     background-color: black;
     color: #fff;
+
+    /* Текст у нас будет в центре */
     text-align: center;
-    padding: 5px 0;
+
+    /* Отступы внутри */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    /* Красивая рамка */
     border-radius: 6px;
- 
+
+    /* Указываем, чтобы показывалось на самом верху */
+    z-index: 1;
+
     /* Position the tooltip text - see examples below! */
     position: absolute;
-    z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+/* Показываем лишь тогда, когда у нас мышка наведена на элемент */
+.tooltip_container:hover>.tooltip_text {
     visibility: visible;
+}
+
+.tooltip_container>.tooltip_text_right {
+    top: -5px;
+    left: 105%;
+    _margin-left: 30px;
+}
+
+.tooltip_container>.tooltip_text_left {
+    top: -5px;
+    right: 105%;
+}
+
+.tooltip_container>.tooltip_text_top {
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip_container>.tooltip_text_bottom {
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Стрелка вниз */
+.tooltip_container>._tooltip_text::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+/* Стрелка вверх */
+.tooltip_container>._tooltip_text::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+/* Стрелка влево */
+.tooltip_container ._tooltip_text::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+/* Стрелка вправо */
+.tooltip_container .tooltip_text::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+/* Поддержка анимации */
+.tooltip_container .tooltip_text {
+    opacity: 0;
+    _transition: opacity 1s;
+}
+
+/* При наведении делаем непрозрачность равной 1 */
+.tooltip_container:hover .tooltip_text {
+    opacity: 1;
+    transition: opacity 500ms;
 }
