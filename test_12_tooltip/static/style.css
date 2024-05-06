@@ -12,7 +12,7 @@
     /* Чтобы контейнер вел себя как инлайновый, а не блочный элемент */
     display: inline-block;
 
-    /* If you want dots under the hoverable text */
+    /* Красивые точки с той стороны, где всплывает у нас инфа */
     _border-bottom: 1px dotted black;
 }
 
